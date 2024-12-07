@@ -1,23 +1,21 @@
-// write a c program to read the month number as input from the user & check whether it is a valid month number or not??
-
+//write a c program to print the summation of th even numbers and odd numbers from 1 to n
 #include <stdio.h>
 
-int main(){
- 
-   int n;
+int main() {
+    int num;
+    int even_count=0;
+    int odd_count=0;
+    printf("Enter the value of num : ");
+    scanf("%d",&num );
+    for(int i=1;i<=num;i++){
+    if(i%2==0){
+       even_count=even_count+i;
+    }else{
+        odd_count=odd_count+i;
+    }
+    }
+printf("summation of even:%d \n",even_count);
+printf("summation of odd: %d \n",odd_count);
 
-    printf("Enter the month number:");
-
-    scanf("%d",&n);
- 
-   if(n>=1 && n<=12){
-  
-      printf("User entered %d is a valid month number",n);
-
-}else{
-   
-  printf("User entered %d is not a valid month number",n);
-
-}
-
+    return 0;
 }

@@ -1,24 +1,35 @@
+//write a c program to read the input for num as integer and print even number from 1 to num using while loop
+
 #include <stdio.h>
 
+
 int main()
+
 {
+    
+int num;
    
- int n;
-
-    printf("Enter the integer value:");
-
-    scanf("%d",&n);
+ int i=2;
+    
+printf("Enter the number : ");
    
- if(n>=-9 && n<=9)
+ scanf("%d",&num);
+   
+ printf("even numbers from 1 to %d\n",num);
+  
+  //while loop for iteration
+   
+ while(i<=num)
+    
 {
         
-printf("the user entered value %d is a digit",n);
-   
- }
-    else{
-     
-   printf("the user entered value %d is a number",n);
+printf("%d \n",i);
+       
+ i+=2;
+    
+}
 
-    }
+    
+return 0;
 
 }

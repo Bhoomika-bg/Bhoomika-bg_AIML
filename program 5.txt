@@ -1,24 +1,14 @@
+//write a c program to print square values from 1 to n 
 #include <stdio.h>
 
-int main()
-{
-   
- int n;
-
-    printf("Enter the integer value:");
-
-    scanf("%d",&n);
-   
- if(-99<=n<=-10 || 10<=n<=99)
-{
-        
-printf("the user entered value %d is a two digit number",n);
-   
- }
-    else{
-     
-   printf("the user entered value %d is not two digit number",n);
-
+int main() {
+    int num;
+    printf("Enter the value of num : ");
+    scanf("%d",&num );
+    for(int i=1;i<=num;i++){
+        printf("%d\n",i*i);
     }
 
+
+    return 0;
 }
